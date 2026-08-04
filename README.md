@@ -12,7 +12,7 @@ An enterprise-wide diagnostic engagement to assess inventory accuracy and operat
 
 ## Business Context
 
-The organization operated across seven branches — three wholesale branches, two supermarkets, and two mini-markets — in the food, beverage, and consumer goods sector, managing more than 10,000 active SKUs. Prior to any ERP investment decision, the organization required a structured, evidence-based understanding of its inventory accuracy and the operational causes behind it.
+The organization operated across seven branches,three wholesale branches, two supermarkets, and two mini-markets in the food, beverage, and consumer goods sector, managing more than 10,000 active SKUs. Prior to any ERP investment decision, the organization required a structured, evidence-based understanding of its inventory accuracy and the operational causes behind it.
 
 ---
 
@@ -68,21 +68,12 @@ Business Process Analysis · ERP Readiness Assessment · Root Cause Analysis (5 
 
 ---
 
-## Repository Structure
 
-```
-README.md
-docs/Project-Dossier.md
-images/
-diagrams/
-```
-
----
 
 ## Full Documentation
 
 The complete project dossier — including detailed findings, root cause synthesis, stakeholder engagement, visual documentation, and evidence mapping — is available at:
 
-**..................)**
+**(..................)**
 
 ---

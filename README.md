@@ -41,7 +41,7 @@ Inventory accuracy and operational inefficiencies across the seven branches had 
 
 ## My Role
 
-**Business Systems Coordinator** — responsible for supporting ERP readiness by analyzing business processes, documenting operational workflows, validating master data, conducting the gap analysis, and preparing the organization for ERP implementation across all seven branches.
+**Business Systems Coordinator**  responsible for supporting ERP readiness by analyzing business processes, documenting operational workflows, validating master data, conducting the gap analysis, and preparing the organization for ERP implementation across all seven branches.
 
 ---
 
@@ -74,6 +74,6 @@ Business Process Analysis · ERP Readiness Assessment · Root Cause Analysis (5 
 
 The complete project dossier — including detailed findings, root cause synthesis, stakeholder engagement, visual documentation, and evidence mapping — is available at:
 
-**(..................)**
+**https://github.com/omaralburiki/Inventory-Gap-Analysis-ERP-Readiness/blob/main/docs/Project-Dossier.md**
 
 ---

@@ -244,7 +244,7 @@ flowchart TD
 | SKU & Barcode Governance | Duplicate SKUs, duplicate/missing barcodes | SKU normalization, barcode governance standard |
 | Purchasing Intelligence | Estimation-based, no data feed | Data-driven reorder points |
 
-*This is a direction-of-travel comparison, not a measured before/after — no post-implementation figures exist for this diagnostic-stage project.*
+*This is a direction-of-travel comparison, not a measured before/after no post-implementation figures exist for this diagnostic-stage project.*
 
 ---
 

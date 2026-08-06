@@ -10,7 +10,7 @@ An enterprise-wide diagnostic engagement to assess inventory accuracy and operat
 
 ## Business Context
 
-The organization operated across seven branches — three wholesale branches, two supermarkets, and two mini-markets — within the food, beverage, and consumer goods sector. The business managed more than 10,000 active SKUs across a mixed perishable and non-perishable inventory profile. Prior to any ERP investment decision, the organization required a structured, evidence-based understanding of how accurate its inventory records actually were, and why.
+The organization operated across seven branches three wholesale branches, two supermarkets, and two mini-markets within the food, beverage, and consumer goods sector. The business managed more than 10,000 active SKUs across a mixed perishable and non-perishable inventory profile. Prior to any ERP investment decision, the organization required a structured, evidence-based understanding of how accurate its inventory records actually were, and why.
 
 ---
 
@@ -59,7 +59,7 @@ Documented existing inventory and operational workflows as they actually functio
 Applied the 5 Whys technique to move past surface-level symptoms of inventory inaccuracy and identify the underlying operational drivers, rather than treating discrepancies as isolated incidents.
 
 ### Process Mapping
-Mapped operational workflows to identify the specific points where inventory processes broke down — where physical execution diverged from what the system recorded.
+Mapped operational workflows to identify the specific points where inventory processes broke down where physical execution diverged from what the system recorded.
 
 ### Data Validation
 Used Microsoft Excel for inventory variance analysis and data validation, and pulled stock movement and inventory data directly from ERP inventory reports and standard system reporting modules.
@@ -80,7 +80,7 @@ Each dimension was assessed against a consistent structure: what was evaluated, 
 
 **2. Stock Visibility at POS**
 - *Assessed:* Whether point-of-sale staff had real-time visibility into warehouse stock levels before committing an order.
-- *Gap identified:* No real-time warehouse stock visibility at POS — staff could not confirm item availability before requesting it for a customer.
+- *Gap identified:* No real-time warehouse stock visibility at POS staff could not confirm item availability before requesting it for a customer.
 - *Business impact:* Orders were drafted against stock that frequently wasn't physically available, directly driving the downstream customer journey problem below.
 - *Improvement direction:* Real-time stock query integration between POS and warehouse systems prior to order confirmation.
 
@@ -92,7 +92,7 @@ Each dimension was assessed against a consistent structure: what was evaluated, 
 
 **4. Process Accountability**
 - *Assessed:* Whether inventory accuracy had a defined owner at branch level.
-- *Gap identified:* No single person was formally accountable for inventory discrepancies at each branch — ownership was not defined in the organizational structure.
+- *Gap identified:* No single person was formally accountable for inventory discrepancies at each branch ownership was not defined in the organizational structure.
 - *Business impact:* Discrepancies persisted without a clear corrective-action driver; no one was positioned to be held accountable for closing the gap.
 - *Improvement direction:* Formal definition of inventory ownership per branch.
 
@@ -110,7 +110,7 @@ Each dimension was assessed against a consistent structure: what was evaluated, 
 
 **7. SKU & Barcode Governance**
 - *Assessed:* The quality and standardization of SKU and barcode data across the product catalog.
-- *Gap identified:* Two concurrent issues. First, multi-origin SKU duplication — the same product was registered as separate SKUs when sourced from different suppliers. Second, barcode governance — duplicate barcodes and products without assigned barcodes, rooted in barcode usage never having been adopted as a primary operational standard.
+- *Gap identified:* Two concurrent issues. First, multi-origin SKU duplication the same product was registered as separate SKUs when sourced from different suppliers. Second, barcode governance duplicate barcodes and products without assigned barcodes, rooted in barcode usage never having been adopted as a primary operational standard.
 - *Business impact:* SKU duplication produced miscounts and confusion during picking, since the same physical product could appear under multiple system identities. The barcode gap independently caused incorrect picks and prevented scan-based control at receiving or issuance. Together, the two issues compounded inventory unreliability rather than one masking the other.
 - *Improvement direction:* Normalize SKUs by treating supplier origin as a product attribute rather than a separate SKU, combined with a formal barcode governance standard mandating barcode assignment to support PDA/barcode scanning adoption at receiving and dispatch.
 
@@ -122,7 +122,7 @@ Each dimension was assessed against a consistent structure: what was evaluated, 
 
 ### Root Cause Synthesis
 
-The eight dimensions above surfaced five cross-cutting root causes — structural issues that each affected multiple dimensions simultaneously rather than being isolated to one area:
+The eight dimensions above surfaced five cross-cutting root causes structural issues that each affected multiple dimensions simultaneously rather than being isolated to one area:
 
 1. **Lack of Inventory Ownership** — underlies Process Accountability and reinforces the persistence of the Inventory Accuracy gap.
 2. **Missing Control Points** — underlies Inventory Accuracy, Data Entry, and Stock Visibility at POS.
@@ -130,7 +130,7 @@ The eight dimensions above surfaced five cross-cutting root causes — structura
 4. **No Exception Handling Process** — underlies Exception Handling and the downstream Customer Journey impact.
 5. **Weak Goods Receipt Process** — underlies Data Entry and SKU/Barcode Governance.
 
-This synthesis — showing how five structural causes explain gaps across eight separate operational dimensions — is what gave the resulting ERP business case its analytical weight: the recommendation wasn't "fix eight separate problems," it was "resolve five structural causes to close eight operational gaps."
+This synthesis — showing how five structural causes explain gaps across eight separate operational dimensions is what gave the resulting ERP business case its analytical weight: the recommendation wasn't "fix eight separate problems," it was "resolve five structural causes to close eight operational gaps."
 
 ---
 
@@ -148,7 +148,7 @@ This synthesis — showing how five structural causes explain gaps across eight 
 ## Recommendations
 
 ### ERP Business Case
-The consolidated findings — quantified variance, mapped process breakdowns, and five identified root causes — were translated into a formal ERP business case, giving the organization a defensible, evidence-based rationale for ERP investment rather than a general statement that "systems needed improvement."
+The consolidated findings quantified variance, mapped process breakdowns, and five identified root causes were translated into a formal ERP business case, giving the organization a defensible, evidence-based rationale for ERP investment rather than a general statement that "systems needed improvement."
 
 ### Process Improvement Recommendations
 The analysis went beyond identifying root causes to evaluate potential solutions and future-state improvements for each. Recommendations included: defining formal inventory ownership per branch; introducing mandatory system control points at issue; establishing a cycle counting process; and documenting an exception handling procedure.
@@ -158,7 +158,7 @@ For the weak goods receipt process specifically, the evaluation assessed multipl
 - **ERP-based goods receipt with mandatory purchase order (PO) matching**, closing the gap that allowed goods to be received without system validation.
 - **Other ERP best practices to strengthen receiving controls**, evaluated alongside the above to determine the most operationally feasible path forward.
 
-This solution evaluation — not just root cause identification — is what gave the resulting ERP business case practical, implementable substance rather than a diagnostic-only conclusion.
+This solution evaluation not just root cause identification is what gave the resulting ERP business case practical, implementable substance rather than a diagnostic-only conclusion.
 
 ---
 

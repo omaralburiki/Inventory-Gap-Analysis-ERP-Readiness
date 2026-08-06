@@ -68,7 +68,7 @@ Used Microsoft Excel for inventory variance analysis and data validation, and pu
 
 ## Findings
 
-### Gap Analysis — 8-Dimension Framework
+### Gap Analysis 8-Dimension Framework
 
 Each dimension was assessed against a consistent structure: what was evaluated, the gap identified, its business impact, and the improvement direction it pointed toward. This is the analytical trail that fed directly into the ERP business case.
 
@@ -86,7 +86,7 @@ Each dimension was assessed against a consistent structure: what was evaluated, 
 
 **3. Data Entry**
 - *Assessed:* Manual data entry dependency across operational touchpoints, including goods receipt.
-- *Gap identified:* Manual entry existed across multiple processes — POS transactions, stock issuance, inter-branch transfers, shipping and delivery, and goods receipt (where PO matching was not enforced).
+- *Gap identified:* Manual entry existed across multiple processes POS transactions, stock issuance, inter-branch transfers, shipping and delivery, and goods receipt (where PO matching was not enforced).
 - *Business impact:* High error rate, slow processing, and inconsistent data across processes that fed into the same inventory figures.
 - *Improvement direction:* Barcode/PDA scanning adoption at key touchpoints, with ERP-enforced entry and mandatory PO matching at receipt.
 
@@ -124,13 +124,13 @@ Each dimension was assessed against a consistent structure: what was evaluated, 
 
 The eight dimensions above surfaced five cross-cutting root causes structural issues that each affected multiple dimensions simultaneously rather than being isolated to one area:
 
-1. **Lack of Inventory Ownership** — underlies Process Accountability and reinforces the persistence of the Inventory Accuracy gap.
-2. **Missing Control Points** — underlies Inventory Accuracy, Data Entry, and Stock Visibility at POS.
-3. **No Cycle Counting Process** — underlies Inventory Accuracy.
-4. **No Exception Handling Process** — underlies Exception Handling and the downstream Customer Journey impact.
-5. **Weak Goods Receipt Process** — underlies Data Entry and SKU/Barcode Governance.
+1. **Lack of Inventory Ownership** underlies Process Accountability and reinforces the persistence of the Inventory Accuracy gap.
+2. **Missing Control Points** underlies Inventory Accuracy, Data Entry, and Stock Visibility at POS.
+3. **No Cycle Counting Process** underlies Inventory Accuracy.
+4. **No Exception Handling Process** underlies Exception Handling and the downstream Customer Journey impact.
+5. **Weak Goods Receipt Process** underlies Data Entry and SKU/Barcode Governance.
 
-This synthesis — showing how five structural causes explain gaps across eight separate operational dimensions is what gave the resulting ERP business case its analytical weight: the recommendation wasn't "fix eight separate problems," it was "resolve five structural causes to close eight operational gaps."
+This synthesis showing how five structural causes explain gaps across eight separate operational dimensions is what gave the resulting ERP business case its analytical weight: the recommendation wasn't "fix eight separate problems," it was "resolve five structural causes to close eight operational gaps."
 
 ---
 

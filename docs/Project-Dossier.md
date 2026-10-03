@@ -175,7 +175,6 @@ This solution evaluation, not just root cause identification, is what gave the r
 
 ## Visual Documentation
 
-*Diagrams below reflect only findings and structure documented and confirmed in this dossier's Evidence Mapping. No workflow, rule, or relationship shown here is invented.*
 
 ### Business Process Flow: Diagnostic Methodology
 

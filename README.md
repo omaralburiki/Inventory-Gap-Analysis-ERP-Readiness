@@ -2,7 +2,7 @@
 
 A diagnostic study of inventory accuracy across a 7-branch food, beverage, and consumer goods business, done to find out whether it was ready for a new ERP and what that ERP would have to fix.
 
-**Mohd. Saeed Balbid Company · Nov 2019 – Apr 2020 · Role: ERP Business Analyst**
+**FMCG retailer and wholesaler, Saudi Arabia · Nov 2019 – Apr 2020 · Role: ERP Business Analyst**
 
 ## The situation
 
@@ -30,8 +30,8 @@ The gap analysis and business case supported the decision to go ahead with an ER
 
 ## Related project
 
-This was phase 1 of the company's ERP work. Phase 2 is the [Multi-Branch ERP Implementation](https://github.com/omaralburiki/Multi-Branch-ERP-Implementation), where these findings were turned into system rules.
+This was part 1 of the company's ERP work. Part 2 is the [Multi-Branch ERP Implementation](https://github.com/omaralburiki/Multi-Branch-ERP-Implementation), where these findings were turned into system rules.
 
 ## Documents
 
-- [Project Dossier](docs/Project-Dossier.md): the full 8-dimension analysis, root cause mapping, recommendations, and diagrams.
+- [Full case study](docs/Project-Dossier.md): the full 8-dimension analysis, root cause mapping, recommendations, and diagrams.

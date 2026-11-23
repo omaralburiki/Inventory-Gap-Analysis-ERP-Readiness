@@ -42,11 +42,11 @@ Inventory accuracy and operational inefficiencies across the 7 branches had neve
 
 ## My Role
 
-**Title:** Business Systems Analyst
+**Role:** ERP Business Analyst
 **Company:** Mohd. Saeed Balbid Company
-**Duration:** Nov 2019 – Apr 2020
+**Project period:** Nov 2019 – Apr 2020
 
-Responsible for supporting ERP readiness by analyzing business processes, documenting operational workflows, validating master data, conducting gap analysis, and preparing the organization for ERP implementation across all 7 branches.
+I carried out the analysis myself: documenting how inventory processes ran in each branch, validating stock and master data, tracing discrepancies to their causes, and building the gap analysis and the ERP business case. Management reviewed the findings and made the investment decision. This was phase 1 of the company's ERP work. Phase 2 was the [Multi-Branch ERP Implementation](https://github.com/omaralburiki/Multi-Branch-ERP-Implementation).
 
 ---
 
@@ -130,7 +130,7 @@ The 8 dimensions above surfaced 5 cross-cutting root causes: structural issues t
 4. **No Exception Handling Process**: underlies Exception Handling and the downstream Customer Journey impact.
 5. **Weak Goods Receipt Process**: underlies Data Entry and SKU/Barcode Governance.
 
-This synthesis, showing how 5 structural causes explain gaps across 8 separate operational dimensions, is what gave the resulting ERP business case its analytical weight: the recommendation wasn't "fix 8 separate problems," it was "resolve 5 structural causes to close 8 operational gaps."
+Because the 5 causes explained the gaps across all 8 dimensions, the business case asked management to fix 5 causes, not 8 separate symptoms.
 
 ---
 
@@ -148,17 +148,17 @@ This synthesis, showing how 5 structural causes explain gaps across 8 separate o
 ## Recommendations
 
 ### ERP Business Case
-The consolidated findings (quantified variance, mapped process breakdowns, and 5 identified root causes) were translated into a formal ERP business case, giving the organization a defensible, evidence-based rationale for ERP investment rather than a general statement that "systems needed improvement."
+The consolidated findings (the measured variance, the mapped process breakdowns, and the 5 root causes) went into a formal ERP business case, so the case for investment rested on measured findings and not on a general sense that the systems needed improving.
 
 ### Process Improvement Recommendations
-The analysis went beyond identifying root causes to evaluate potential solutions and future-state improvements for each. Recommendations included: defining formal inventory ownership per branch; introducing mandatory system control points at issue; establishing a cycle counting process; and documenting an exception handling procedure.
+For each root cause I also looked at how it could be fixed. Recommendations included: defining formal inventory ownership per branch; introducing mandatory system control points at issue; establishing a cycle counting process; and documenting an exception handling procedure.
 
 For the weak goods receipt process specifically, the evaluation assessed multiple corrective options rather than a single fix:
 - **PDA / mobile Android barcode scanning devices** at receiving, to replace manual entry with system-validated scans.
 - **ERP-based goods receipt with mandatory purchase order (PO) matching**, closing the gap that allowed goods to be received without system validation.
 - **Other ERP best practices to strengthen receiving controls**, evaluated alongside the above to determine the most operationally feasible path forward.
 
-This solution evaluation, not just root cause identification, is what gave the resulting ERP business case practical, implementable substance rather than a diagnostic-only conclusion.
+Evaluating these options gave management practical choices to weigh, not only a list of problems.
 
 ---
 
@@ -254,7 +254,6 @@ flowchart TD
 - Root Cause Analysis (5 Whys)
 - Process Mapping
 - Master Data Validation
-- Requirements Workshops facilitation
 - Stakeholder engagement across executive, finance, procurement, warehouse, and branch functions
 - Business case development
 

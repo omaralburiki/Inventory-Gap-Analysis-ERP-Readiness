@@ -1,88 +1,37 @@
 # Inventory Gap Analysis & ERP Readiness
 
-Business process diagnostic and ERP readiness assessment conducted across a 7-branch retail and wholesale distribution business, establishing the evidence base for an ERP implementation decision.
+A diagnostic study of inventory accuracy across a 7-branch food, beverage, and consumer goods business, done to find out whether it was ready for a new ERP and what that ERP would have to fix.
 
----
+**Mohd. Saeed Balbid Company · Nov 2019 – Apr 2020 · Role: ERP Business Analyst**
 
-## Overview
+## The situation
 
-An enterprise-wide diagnostic engagement to assess inventory accuracy and operational readiness across 7 branches, undertaken to establish the evidence base for an ERP implementation decision.
+The company ran 3 wholesale branches, 2 supermarkets, and 2 mini-markets, with more than 10,000 active SKUs. The gap between system stock and shelf stock was a known problem, but it had never been measured, and nobody had a clear picture of why it happened. Management needed that picture before committing to an ERP investment.
 
----
+## What I did
 
-## Business Context
+I carried out the analysis myself. I documented how inventory processes actually ran in each branch, validated stock data in Excel against the reports from the existing system, and used 5 Whys to trace discrepancies back to their causes. I mapped the points where physical work and system records parted ways, then organized the findings into an 8-dimension gap analysis.
 
-The organization operated across 7 branches (3 wholesale branches, 2 supermarkets, and 2 mini-markets) in the food, beverage, and consumer goods sector, managing more than 10,000 active SKUs. Prior to any ERP investment decision, the organization required a structured, evidence-based understanding of its inventory accuracy and the operational causes behind it.
+For each cause I also looked at how it could be fixed. Goods receipt is a good example: I compared barcode scanning on mobile devices at receiving, ERP-based receipt with mandatory PO matching, and other receiving controls, so management had real options to weigh.
 
----
+I presented the results to executive management, finance, procurement, warehouse supervisors, branch management, and the ERP solution provider. Management reviewed the findings and made the investment decision.
 
-## Problem Statement
+## What the analysis found
 
-Inventory accuracy and operational inefficiencies across the 7 branches had never been formally assessed. Discrepancies between system-recorded stock and physical stock were a known operational reality, but no structured diagnostic existed to quantify the scale of the problem, identify its causes, or provide a defensible basis for ERP investment.
+- A 25–35% variance between system stock and physical stock.
+- Gaps in 8 areas: inventory accuracy, stock visibility at POS, data entry, process accountability, the wholesale customer journey, exception handling, SKU and barcode governance, and purchasing.
+- 5 root causes behind those gaps: no inventory owner at branch level, missing system control points, no cycle counting, no exception handling process, and a weak goods receipt process.
 
----
+Because 5 causes explained the gaps across all 8 areas, the business case asked management to fix 5 causes, not 8 separate symptoms.
 
-## Objectives
+## Outcome
 
-- Analyze inventory accuracy across all 7 branches.
-- Identify the operational inefficiencies contributing to inventory unreliability.
-- Apply root cause analysis to move past surface-level symptoms.
-- Establish the business case and readiness assessment required to justify ERP implementation.
+The gap analysis and business case supported the decision to go ahead with an ERP, and the findings became a direct input to the implementation project. This was a diagnostic project, so there are no before-and-after measurements here.
 
----
+## Related project
 
-## Scope
+This was phase 1 of the company's ERP work. Phase 2 is the [Multi-Branch ERP Implementation](https://github.com/omaralburiki/Multi-Branch-ERP-Implementation), where these findings were turned into system rules.
 
-- 7 branches: 3 Wholesale, 2 Supermarkets, 2 Mini-Markets.
-- 10,000+ active SKUs.
-- AS-IS operational assessment, root cause analysis, process mapping, and 8-dimension gap analysis.
+## Documents
 
----
-
-## My Role
-
-**Business Systems Analyst** (Nov 2019 – Apr 2020). Responsible for supporting ERP readiness by analyzing business processes, documenting operational workflows, validating master data, conducting the gap analysis, and preparing the organization for ERP implementation across all 7 branches.
-
----
-
-## Key Deliverables
-
-- 8-Dimension Gap Analysis
-- ERP Business Case
-- Process Improvement Recommendations
-
----
-
-## Business Impact
-
-- Identified a 25–35% inventory variance across all 7 branches.
-- Identified 5 major structural root causes underlying the variance.
-- Established the operational foundation and business case supporting the organization's decision to proceed with ERP implementation.
-- Findings were carried forward directly as an input into the subsequent ERP implementation project.
-
----
-
-## Skills Demonstrated
-
-Business Process Analysis · ERP Readiness Assessment · Root Cause Analysis (5 Whys) · Process Mapping · Master Data Validation · Stakeholder Engagement · Business Case Development
-
----
-
-## Repository Structure
-
-```
-README.md
-docs/Project-Dossier.md
-images/
-diagrams/
-```
-
----
-
-## Full Documentation
-
-The complete project dossier, including detailed findings, root cause synthesis, stakeholder engagement, visual documentation, and evidence mapping, is available at:
-
-**https://github.com/omaralburiki/Inventory-Gap-Analysis-ERP-Readiness/blob/main/docs/Project-Dossier.md**
-
----
+- [Project Dossier](docs/Project-Dossier.md): the full 8-dimension analysis, root cause mapping, recommendations, and diagrams.

@@ -1,182 +1,24 @@
 # Inventory Gap Analysis & ERP Readiness
 
----
+**Case study** · FMCG retailer and wholesaler, Saudi Arabia · Nov 2019 – Apr 2020 · Role: ERP Business Analyst
 
-## Overview
+This is the full write-up behind the [README](../README.md). It covers how I ran the analysis, what each of the 8 dimensions showed, how the findings came down to 5 root causes, and what I recommended.
 
-An enterprise-wide diagnostic engagement to assess inventory accuracy and operational readiness across a 7-branch retail and wholesale distribution business, undertaken to establish the evidence base for an ERP implementation decision.
+## The business
 
----
+The company ran 7 branches in the food, beverage, and consumer goods sector: 3 wholesale branches, 2 supermarkets, and 2 mini-markets. It managed more than 10,000 active SKUs, with a mix of perishable and non-perishable stock. The gap between system stock and physical stock was a known problem, but it had never been measured, and nobody had a structured view of its causes. Before any ERP investment, management needed to know how accurate the inventory records really were, and why.
 
-## Business Context
+## How I worked
 
-The organization operated across 7 branches (3 wholesale branches, 2 supermarkets, and 2 mini-markets) within the food, beverage, and consumer goods sector. The business managed more than 10,000 active SKUs across a mixed perishable and non-perishable inventory profile. Prior to any ERP investment decision, the organization required a structured, evidence-based understanding of how accurate its inventory records actually were, and why.
+I carried out the analysis myself, in four steps.
 
----
+**AS-IS assessment.** I documented how inventory and related workflows actually ran in each branch. That became the baseline for measuring gaps.
 
-## Business Problem
+**Data validation.** I pulled stock movement and inventory data from the reports of the existing system and used Excel for variance analysis and data validation.
 
-Inventory accuracy and operational inefficiencies across the 7 branches had never been formally assessed. Discrepancies between system-recorded stock and physical stock were a known operational reality, but no structured diagnostic existed to quantify the scale of the problem, identify its causes, or provide a defensible basis for investment in ERP.
+**Process mapping.** I mapped the workflows to find the points where physical work and system records parted ways.
 
----
-
-## Objectives
-
-- Analyze inventory accuracy across all 7 branches.
-- Identify the operational inefficiencies contributing to inventory unreliability.
-- Establish the business case and readiness assessment required to justify ERP implementation.
-
----
-
-## Project Scope
-
-- 7 branches: 3 Wholesale, 2 Supermarkets, 2 Mini-Markets.
-- 10,000+ active SKUs.
-- Inventory gap analysis across all branches.
-- AS-IS operational assessment.
-- Root cause analysis.
-- Process mapping.
-- ERP business case development.
-
----
-
-## My Role
-
-**Role:** ERP Business Analyst
-**Company:** Mohd. Saeed Balbid Company
-**Project period:** Nov 2019 – Apr 2020
-
-I carried out the analysis myself: documenting how inventory processes ran in each branch, validating stock and master data, tracing discrepancies to their causes, and building the gap analysis and the ERP business case. Management reviewed the findings and made the investment decision. This was phase 1 of the company's ERP work. Phase 2 was the [Multi-Branch ERP Implementation](https://github.com/omaralburiki/Multi-Branch-ERP-Implementation).
-
----
-
-## Business Analysis Approach
-
-### AS-IS Assessment
-Documented existing inventory and operational workflows as they actually functioned across the 7 branches, establishing the baseline against which gaps would be measured.
-
-### Root Cause Analysis (5 Whys)
-Applied the 5 Whys technique to move past surface-level symptoms of inventory inaccuracy and identify the underlying operational drivers, rather than treating discrepancies as isolated incidents.
-
-### Process Mapping
-Mapped operational workflows to identify the specific points where inventory processes broke down, where physical execution diverged from what the system recorded.
-
-### Data Validation
-Used Microsoft Excel for inventory variance analysis and data validation, and pulled stock movement and inventory data directly from ERP inventory reports and standard system reporting modules.
-
----
-
-## Findings
-
-### Gap Analysis: 8-Dimension Framework
-
-Each dimension was assessed against a consistent structure: what was evaluated, the gap identified, its business impact, and the improvement direction it pointed toward. This is the analytical trail that fed directly into the ERP business case.
-
-**1. Inventory Accuracy**
-- *Assessed:* System-recorded inventory against physical stock across all 7 branches.
-- *Gap identified:* A 25–35% variance between system and physical stock.
-- *Business impact:* Unreliable stock data undermined order fulfillment, financial reporting, and purchasing decisions across the business.
-- *Improvement direction:* Mandatory system control points at issue, and introduction of a cycle counting process to replace annual-only physical counts.
-
-**2. Stock Visibility at POS**
-- *Assessed:* Whether point-of-sale staff had real-time visibility into warehouse stock levels before committing an order.
-- *Gap identified:* No real-time warehouse stock visibility at POS. Staff could not confirm item availability before requesting it for a customer.
-- *Business impact:* Orders were drafted against stock that frequently wasn't physically available, directly driving the downstream customer journey problem below.
-- *Improvement direction:* Real-time stock query integration between POS and warehouse systems prior to order confirmation.
-
-**3. Data Entry**
-- *Assessed:* Manual data entry dependency across operational touchpoints, including goods receipt.
-- *Gap identified:* Manual entry existed across multiple processes: POS transactions, stock issuance, inter-branch transfers, shipping and delivery, and goods receipt (where PO matching was not enforced).
-- *Business impact:* High error rate, slow processing, and inconsistent data across processes that fed into the same inventory figures.
-- *Improvement direction:* Barcode/PDA scanning adoption at key touchpoints, with ERP-enforced entry and mandatory PO matching at receipt.
-
-**4. Process Accountability**
-- *Assessed:* Whether inventory accuracy had a defined owner at branch level.
-- *Gap identified:* No single person was formally accountable for inventory discrepancies at each branch. Ownership was not defined in the organizational structure.
-- *Business impact:* Discrepancies persisted without a clear corrective-action driver; no one was positioned to be held accountable for closing the gap.
-- *Improvement direction:* Formal definition of inventory ownership per branch.
-
-**5. Customer Journey**
-- *Assessed:* The physical customer flow during a wholesale transaction, from order request to invoice.
-- *Gap identified:* A 3-step physical loop (POS → Warehouse → POS), directly observed and documented during this engagement. This pattern applied mainly to wholesale branches.
-- *Business impact:* Slow, unprofessional transaction experience and elevated risk of customer abandonment, driven directly by the lack of stock visibility at POS.
-- *Improvement direction:* Digital order confirmation eliminating the return trip to POS.
-
-**6. Exception Handling**
-- *Assessed:* The process followed when a requested item was unavailable.
-- *Gap identified:* No documented escalation or decision-making process existed for exceptions.
-- *Business impact:* Inconsistent resolution of the same problem depending on which staff member handled it, with no standard customer-facing response.
-- *Improvement direction:* Documented exception-handling procedure, including escalation and backorder/substitute options.
-
-**7. SKU & Barcode Governance**
-- *Assessed:* The quality and standardization of SKU and barcode data across the product catalog.
-- *Gap identified:* 2 concurrent issues. First, multi-origin SKU duplication: the same product was registered as separate SKUs when sourced from different suppliers. Second, barcode governance: duplicate barcodes and products without assigned barcodes, rooted in barcode usage never having been adopted as a primary operational standard.
-- *Business impact:* SKU duplication produced miscounts and confusion during picking, since the same physical product could appear under multiple system identities. The barcode gap independently caused incorrect picks and prevented scan-based control at receiving or issuance. Together, the 2 issues compounded inventory unreliability rather than one masking the other.
-- *Improvement direction:* Normalize SKUs by treating supplier origin as a product attribute rather than a separate SKU, combined with a formal barcode governance standard mandating barcode assignment to support PDA/barcode scanning adoption at receiving and dispatch.
-
-**8. Purchasing Intelligence**
-- *Assessed:* The basis on which procurement made purchasing decisions.
-- *Gap identified:* Purchasing was based on experience and estimation, with no inventory data, demand analysis, or consumption analysis used in planning.
-- *Business impact:* Simultaneous overstock on some SKUs and stockouts on others, driven by decisions made without a data feed.
-- *Improvement direction:* Data-driven reorder points fed by live inventory and consumption data.
-
-### Root Cause Synthesis
-
-The 8 dimensions above surfaced 5 cross-cutting root causes: structural issues that each affected multiple dimensions simultaneously rather than being isolated to one area.
-
-1. **Lack of Inventory Ownership**: underlies Process Accountability and reinforces the persistence of the Inventory Accuracy gap.
-2. **Missing Control Points**: underlies Inventory Accuracy, Data Entry, and Stock Visibility at POS.
-3. **No Cycle Counting Process**: underlies Inventory Accuracy.
-4. **No Exception Handling Process**: underlies Exception Handling and the downstream Customer Journey impact.
-5. **Weak Goods Receipt Process**: underlies Data Entry and SKU/Barcode Governance.
-
-Because the 5 causes explained the gaps across all 8 dimensions, the business case asked management to fix 5 causes, not 8 separate symptoms.
-
----
-
-## Stakeholders
-
-- Executive Management
-- Finance Manager
-- Procurement Manager
-- Warehouse Supervisors
-- Branch Management
-- ERP Solution Provider
-
----
-
-## Recommendations
-
-### ERP Business Case
-The consolidated findings (the measured variance, the mapped process breakdowns, and the 5 root causes) went into a formal ERP business case, so the case for investment rested on measured findings and not on a general sense that the systems needed improving.
-
-### Process Improvement Recommendations
-For each root cause I also looked at how it could be fixed. Recommendations included: defining formal inventory ownership per branch; introducing mandatory system control points at issue; establishing a cycle counting process; and documenting an exception handling procedure.
-
-For the weak goods receipt process specifically, the evaluation assessed multiple corrective options rather than a single fix:
-- **PDA / mobile Android barcode scanning devices** at receiving, to replace manual entry with system-validated scans.
-- **ERP-based goods receipt with mandatory purchase order (PO) matching**, closing the gap that allowed goods to be received without system validation.
-- **Other ERP best practices to strengthen receiving controls**, evaluated alongside the above to determine the most operationally feasible path forward.
-
-Evaluating these options gave management practical choices to weigh, not only a list of problems.
-
----
-
-## Business Outcomes
-
-- Analyzed operations across all 7 branches.
-- Assessed more than 10,000 SKUs.
-- Identified a 25–35% inventory variance.
-- Identified 5 major operational root causes, each with a defined corrective direction.
-- Produced an 8-dimension gap analysis used as a direct input into the subsequent ERP implementation project.
-- Established the operational foundation and business case that supported the organization's decision to proceed with ERP implementation.
-
----
-
-## Visual Documentation
-
-
-### Business Process Flow: Diagnostic Methodology
+**Root cause analysis.** I used 5 Whys on each pattern of discrepancy, so the analysis would reach the causes and not stop at individual errors.
 
 ```mermaid
 flowchart LR
@@ -187,7 +29,38 @@ flowchart LR
     E --> F[ERP Business Case]
 ```
 
-### AS-IS Process Diagram: Wholesale Customer Journey
+## What the 8 dimensions showed
+
+**1. Inventory accuracy.** System stock and physical stock differed by 25–35% across the 7 branches. Unreliable stock figures affected order fulfillment, financial reporting, and purchasing. I recommended mandatory system control points at stock issue and a cycle counting process to replace annual-only counts.
+
+**2. Stock visibility at POS.** Staff at the point of sale could not see warehouse stock before committing an order, so orders were often drafted against stock that was not physically there. I recommended a real-time stock query between POS and the warehouse before an order is confirmed.
+
+**3. Data entry.** Data was entered by hand at POS, stock issue, inter-branch transfers, shipping and delivery, and goods receipt, where PO matching was not enforced. That meant frequent errors, slow processing, and inconsistent figures feeding the same inventory numbers. I recommended barcode or PDA scanning at the key touchpoints, ERP-enforced entry, and mandatory PO matching at receipt.
+
+**4. Process accountability.** No one at branch level was formally responsible for inventory discrepancies, so nothing drove corrective action. I recommended a defined inventory owner for each branch.
+
+**5. Customer journey.** In the wholesale branches I observed a 3-step physical loop: the customer went from POS to the warehouse and back to POS. It came directly from the lack of stock visibility, slowed every transaction, and put sales at risk. I recommended digital order confirmation to remove the trip back to POS.
+
+**6. Exception handling.** There was no documented process for an unavailable item, so the same situation was handled differently depending on who dealt with it. I recommended a documented exception procedure with escalation and backorder or substitute options.
+
+**7. SKU and barcode governance.** Two problems existed together. The same product was registered as separate SKUs when it came from different suppliers, and some barcodes were duplicated or missing because barcode use had never become a standard. Duplicate SKUs caused miscounts and confusion at picking, and the barcode gaps caused wrong picks and blocked scan-based control at receiving and issue. I recommended treating supplier origin as an attribute of a single SKU, and a barcode standard that requires a barcode on every product.
+
+**8. Purchasing.** Purchasing was based on experience and estimates, with no inventory, demand, or consumption data behind it. The result was overstock on some items and stockouts on others. I recommended reorder points fed by live inventory and consumption data.
+
+| Dimension | AS-IS gap | Recommended direction |
+|---|---|---|
+| Inventory accuracy | 25–35% variance | Mandatory control points, cycle counting |
+| Stock visibility at POS | No real-time visibility before ordering | Real-time stock query at POS |
+| Data entry | Manual at POS, issue, transfers, shipping, receipt | Barcode/PDA scanning, enforced entry |
+| Process accountability | No owner per branch | Formal ownership per branch |
+| Customer journey | 3-step physical loop (wholesale) | Digital order confirmation |
+| Exception handling | No escalation process | Documented exception procedure |
+| SKU and barcode governance | Duplicate SKUs, duplicate or missing barcodes | SKU normalization, barcode standard |
+| Purchasing | Estimates, no data | Data-driven reorder points |
+
+This is a direction-of-travel comparison. No post-implementation figures exist for a diagnostic project.
+
+The wholesale customer journey looked like this:
 
 ```mermaid
 flowchart TD
@@ -198,9 +71,16 @@ flowchart TD
     E -->|No| F[Customer returns to POS - no item]
     E -->|Yes| G[Customer returns to POS to complete order]
 ```
-Reflects the confirmed 3-step physical loop, specific to wholesale branches.
 
-### Root Cause → Dimension Relationship
+## From 8 gaps to 5 root causes
+
+The 8 dimensions came down to 5 causes, each affecting more than one area:
+
+1. **Lack of inventory ownership**, behind process accountability and the persistence of the accuracy gap.
+2. **Missing control points**, behind inventory accuracy, data entry, and stock visibility at POS.
+3. **No cycle counting process**, behind inventory accuracy.
+4. **No exception handling process**, behind exception handling and the customer journey problem.
+5. **Weak goods receipt process**, behind data entry and SKU and barcode governance.
 
 ```mermaid
 flowchart LR
@@ -215,9 +95,18 @@ flowchart LR
     RC5[Weak Goods Receipt Process] --> D3
     RC5 --> D7[SKU and Barcode Governance]
 ```
-Visualizes the confirmed Root Cause Synthesis: 5 structural causes explaining gaps across 8 dimensions.
 
-### Stakeholder Map
+Because the 5 causes explained the gaps across all 8 dimensions, the business case asked management to fix 5 causes, not 8 separate symptoms.
+
+## Recommendations and the business case
+
+The measured variance, the mapped process breakdowns, and the 5 root causes went into a formal ERP business case, so the investment decision rested on measured findings. The main recommendations were an inventory owner for each branch, mandatory control points at issue, a cycle counting process, and a documented exception procedure.
+
+For goods receipt I compared three options: PDA or mobile barcode scanning at receiving, ERP-based goods receipt with mandatory PO matching, and other receiving controls, to find the most practical path. Management had real choices to weigh, not only a list of problems.
+
+## Stakeholders
+
+I worked with and presented the findings to executive management, the finance manager, the procurement manager, warehouse supervisors, branch management, and the ERP solution provider.
 
 ```mermaid
 flowchart TD
@@ -230,31 +119,6 @@ flowchart TD
     Center --- ERP[ERP Solution Provider]
 ```
 
-### Before vs. Improvement Direction (By Dimension)
+## Outcome
 
-| Dimension | AS-IS Gap | Recommended Direction |
-|---|---|---|
-| Inventory Accuracy | 25–35% variance | Mandatory control points, cycle counting |
-| Stock Visibility at POS | No real-time visibility before order | Real-time stock query at POS |
-| Data Entry | Manual across POS, issuance, transfers, shipping, receipt | Barcode/PDA adoption, enforced entry |
-| Process Accountability | No defined ownership per branch | Formal ownership assignment |
-| Customer Journey | 3-step physical loop (wholesale) | Digital order confirmation |
-| Exception Handling | No escalation process | Documented exception procedure |
-| SKU & Barcode Governance | Duplicate SKUs, duplicate/missing barcodes | SKU normalization, barcode governance standard |
-| Purchasing Intelligence | Estimation-based, no data feed | Data-driven reorder points |
-
-*This is a direction-of-travel comparison, not a measured before/after. No post-implementation figures exist for this diagnostic-stage project.*
-
----
-
-## Skills Demonstrated
-
-- Business Process Analysis
-- ERP Readiness Assessment
-- Root Cause Analysis (5 Whys)
-- Process Mapping
-- Master Data Validation
-- Stakeholder engagement across executive, finance, procurement, warehouse, and branch functions
-- Business case development
-
----
+The business case supported the decision to go ahead with an ERP, and the 8-dimension analysis became a direct input to part 2, the [Multi-Branch ERP Implementation](https://github.com/omaralburiki/Multi-Branch-ERP-Implementation).

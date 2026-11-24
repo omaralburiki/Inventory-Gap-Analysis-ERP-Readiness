@@ -12,7 +12,7 @@ The company ran 3 wholesale branches, 2 supermarkets, and 2 mini-markets, with m
 
 I carried out the analysis myself. I documented how inventory processes actually ran in each branch, validated stock data in Excel against the reports from the existing system, and used 5 Whys to trace discrepancies back to their causes. I mapped the points where physical work and system records parted ways, then organized the findings into an 8-dimension gap analysis.
 
-For each cause I also looked at how it could be fixed. Goods receipt is a good example: I compared barcode scanning on mobile devices at receiving, ERP-based receipt with mandatory PO matching, and other receiving controls, so management had real options to weigh.
+For each cause I also looked at how it could be fixed. Goods receipt is a good example: I compared barcode scanning on mobile devices at receiving, ERP-based receipt with mandatory PO matching, and wider ERP receiving practices, so management had real options to weigh.
 
 I presented the results to executive management, finance, procurement, warehouse supervisors, branch management, and the ERP solution provider. Management reviewed the findings and made the investment decision.
 
@@ -20,9 +20,10 @@ I presented the results to executive management, finance, procurement, warehouse
 
 - A 25–35% variance between system stock and physical stock.
 - Gaps in 8 areas: inventory accuracy, stock visibility at POS, data entry, process accountability, the wholesale customer journey, exception handling, SKU and barcode governance, and purchasing.
-- 5 root causes behind those gaps: no inventory owner at branch level, missing system control points, no cycle counting, no exception handling process, and a weak goods receipt process.
+- 5 operational root causes behind 7 of those areas: no inventory owner at branch level, missing system control points, no cycle counting, no exception handling process, and a weak goods receipt process.
+- Purchasing, the eighth area, traced back to the legacy system itself. It could not report sales per item, available stock, or stock movements in a usable form, so purchasing ran on estimates.
 
-Because 5 causes explained the gaps across all 8 areas, the business case asked management to fix 5 causes, not 8 separate symptoms.
+The business case therefore asked management to address causes rather than 8 separate symptoms: fix the 5 operational causes, and replace a system that could not produce the data the business needed.
 
 ## Outcome
 
@@ -34,4 +35,4 @@ This was part 1 of the company's ERP work. Part 2 is the [Multi-Branch ERP Imple
 
 ## Documents
 
-- [Full case study](docs/Project-Dossier.md): the full 8-dimension analysis, root cause mapping, recommendations, and diagrams.
+- [Full case study](docs/Case-Study.md): the full 8-dimension analysis, root cause mapping, recommendations, and diagrams.

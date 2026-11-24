@@ -21,12 +21,25 @@ I carried out the analysis myself, in four steps.
 **Root cause analysis.** I used 5 Whys on each pattern of discrepancy, so the analysis would reach the causes and not stop at individual errors.
 
 ```mermaid
-flowchart LR
-    A[AS-IS Assessment] --> B[Root Cause Analysis - 5 Whys]
-    B --> C[Process Mapping]
-    C --> D[8-Dimension Gap Analysis]
-    D --> E[Recommendations and Solution Options]
-    E --> F[ERP Business Case]
+flowchart TB
+    subgraph R1[" "]
+        direction LR
+        A["AS-IS assessment"]
+        B["Data validation<br/>in Excel"]
+        C["Process mapping"]
+        D["Root cause analysis<br/>5 Whys"]
+        A --> B --> C --> D
+    end
+    subgraph R2[" "]
+        direction LR
+        E["8-dimension<br/>gap analysis"]
+        F["Options and<br/>recommendations"]
+        G["ERP business case"]
+        E --> F --> G
+    end
+    D --> E
+    style R1 fill:none,stroke:none
+    style R2 fill:none,stroke:none
 ```
 
 ## What the 8 dimensions showed
@@ -74,7 +87,7 @@ flowchart TD
 
 ## From 8 gaps to 5 root causes
 
-The 8 dimensions came down to 5 causes, each affecting more than one area:
+Seven of the 8 dimensions came down to 5 operational root causes, each affecting more than one area:
 
 1. **Lack of inventory ownership**, behind process accountability and the persistence of the accuracy gap.
 2. **Missing control points**, behind inventory accuracy, data entry, and stock visibility at POS.
@@ -82,42 +95,47 @@ The 8 dimensions came down to 5 causes, each affecting more than one area:
 4. **No exception handling process**, behind exception handling and the customer journey problem.
 5. **Weak goods receipt process**, behind data entry and SKU and barcode governance.
 
+Purchasing does not trace to any one of these. It sits at the end of a chain:
+
+| Why? | Because |
+|---|---|
+| Why did some items run out while others piled up? | Purchase quantities were set by estimate |
+| Why by estimate? | Buyers had no reliable sales, stock, or consumption figures to plan from |
+| Why no reliable figures? | The legacy system could not report sales per item over a period, available stock, or stock movements in a usable form, and the stock figures it held were 25–35% off |
+| Why were the stock figures off? | Missing control points, no cycle counting, and no inventory ownership, the causes behind the accuracy gap |
+| Why could the system not report? | It recorded invoices but did not deduct stock or track its movement |
+
+So the root of the purchasing gap is the legacy system's missing data capability, and three of the operational causes contribute through the inventory accuracy gap. Better discipline alone would have made stock counts more accurate, but it could not have produced item-level sales and movement data. That is part of why the answer was an ERP and not process fixes alone.
+
 ```mermaid
 flowchart LR
-    RC1[Lack of Inventory Ownership] --> D4[Process Accountability]
-    RC1 --> D1[Inventory Accuracy]
-    RC2[Missing Control Points] --> D1
-    RC2 --> D3[Data Entry]
-    RC2 --> D2[Stock Visibility at POS]
-    RC3[No Cycle Counting Process] --> D1
-    RC4[No Exception Handling Process] --> D6[Exception Handling]
-    RC4 --> D5[Customer Journey]
-    RC5[Weak Goods Receipt Process] --> D3
-    RC5 --> D7[SKU and Barcode Governance]
+    RC1[Lack of inventory ownership] --> D4[Process accountability]
+    RC1 --> D1[Inventory accuracy]
+    RC2[Missing control points] --> D1
+    RC2 --> D3[Data entry]
+    RC2 --> D2[Stock visibility at POS]
+    RC3[No cycle counting process] --> D1
+    RC4[No exception handling process] --> D6[Exception handling]
+    RC4 --> D5[Customer journey]
+    RC5[Weak goods receipt process] --> D3
+    RC5 --> D7[SKU and barcode governance]
+    SYS[Legacy system could not report<br/>sales, stock, or movements] --> D8[Purchasing]
+    D1 -. unreliable stock figures .-> D8
+    classDef sys stroke-dasharray: 5 3
+    class SYS sys
 ```
 
-Because the 5 causes explained the gaps across all 8 dimensions, the business case asked management to fix 5 causes, not 8 separate symptoms.
+The solid boxes on the left are the 5 operational root causes. The dashed box is the system limitation, and the dotted arrow shows the accuracy gap feeding into purchasing.
 
 ## Recommendations and the business case
 
-The measured variance, the mapped process breakdowns, and the 5 root causes went into a formal ERP business case, so the investment decision rested on measured findings. The main recommendations were an inventory owner for each branch, mandatory control points at issue, a cycle counting process, and a documented exception procedure.
+The measured variance, the mapped process breakdowns, the 5 operational root causes, and the legacy system's reporting limits went into a formal ERP business case, so the investment decision rested on measured findings. The main recommendations were an inventory owner for each branch, mandatory control points at issue, a cycle counting process, and a documented exception procedure.
 
-For goods receipt I compared three options: PDA or mobile barcode scanning at receiving, ERP-based goods receipt with mandatory PO matching, and other receiving controls, to find the most practical path. Management had real choices to weigh, not only a list of problems.
+For goods receipt I compared three options: PDA or mobile barcode scanning at receiving, ERP-based goods receipt with mandatory PO matching, and wider ERP receiving practices, to find the most practical path. Management had real choices to weigh, not only a list of problems.
 
 ## Stakeholders
 
 I worked with and presented the findings to executive management, the finance manager, the procurement manager, warehouse supervisors, branch management, and the ERP solution provider.
-
-```mermaid
-flowchart TD
-    Center((Inventory Gap Analysis))
-    Center --- EM[Executive Management]
-    Center --- FM[Finance Manager]
-    Center --- PM[Procurement Manager]
-    Center --- WS[Warehouse Supervisors]
-    Center --- BM[Branch Management]
-    Center --- ERP[ERP Solution Provider]
-```
 
 ## Outcome
 

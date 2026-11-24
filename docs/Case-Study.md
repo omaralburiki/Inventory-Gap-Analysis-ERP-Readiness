@@ -37,7 +37,7 @@ flowchart TB
         G["ERP business case"]
         E --> F --> G
     end
-    D --> E
+    R1 --> R2
     style R1 fill:none,stroke:none
     style R2 fill:none,stroke:none
 ```
